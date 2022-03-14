@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Derek White | Web Developer</title>
+</head>
+
+<body>
+    <!-- Navbar -->
+    <nav>
+        <div>
+            <ul>
+                <li class="resume"><a href="Derek White.pdf" target="_blank">Resume</a></li>
+            </ul>
+            <button class="menu-button">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <g id="24 / basic / menu">
+                        <path id="icon" fill-rule="evenodd" clip-rule="evenodd"
+                            d="M22 7V5H2V7H22ZM22 11V13H2V11H22ZM22 17V19H2V17H22Z" fill="black" />
+                    </g>
+                </svg>
+            </button>
+        </div>
+    </nav>
+    <!-- Hero -->
+    <section id="about" class="hero">
+        <div>
+            <h1>
+                <span class="hello">Hello!</span>
+                <span class="my-name">My name is Derek White.</span>
+                <span class="my-name-1">I'm a full-stack web developer.</span>
+            </h1>
+            <p class="subtitle">
+                I'm a software developer dedicated to building intuitive and purposeful digital solutions.
+            </p>
+            <ul>
+                <li><a href="#projects">Check out my latest app</a></li>
+            </ul>
+        </div>
+    </section>
+    <!-- Skills -->
+    <section id="skills" class="skills">
+        <h2 class="skills-header">My Skills</h2>
+        <div class="skills-wrapper">
+            <div class="set">
+                <img class="icon icon-card" src="icons/icons8-html-5.svg" alt="HTML5 logo" title="HTML5">
+                <img class="icon icon-card" src="icons/icons8-javascript.svg" alt="JavaScript logo" title="JavaScript">
+                <img class="icon icon-card" src="icons/icons8-react.svg" alt="React.js logo" title="React.js">
+                <img class="icon icon-card" src="icons/icons8-node-js.svg" alt="Node.js logo" title="Node.js">
+            </div>
+            <div class="set">
+                <img class="icon icon-card" src="icons/icons8-css3.svg" alt="CSS3 logo" title="CSS3">
+                <img class="icon icon-card" src="icons/icons8-mongodb.svg" alt="MongoDB logo" title="MongoDB">
+                <img class="icon icon-card" src="icons/icons8-postgresql.svg" alt="PostgreSQL logo" title="PostgreSQL">
+                <img class="icon icon-card" src="icons/icons8-git.svg" alt="Git logo" title="Git">
+            </div>
+        </div>
+    </section>
+    <!-- Projects -->
+    <section id="projects" class="projects">
+        <div>
+            <div class="projects-container">
+                <!-- Trading App -->
+                <h2 class="projects-title">Featured Project</h2>
+                <div class="project-card">
+                    <div class="project-details">
+                        <div>
+                            <h3>Stock Trading Simulator</h3>
+                            <p>A single-page application where users can buy and sell stocks with simulated funds.</p>
+                            <p>Build a portfolio from the 500 largest stocks in the world by market cap. Prices update daily at 8pm EST.</p>
+                            <h4 class="tech-stack">Tech stack</h4>
+                            <ul>
+                                <li>Front-end: React.js</li>
+                                <li>Back-end: Express.js</li>
+                                <li>Database: MongoDB</li>
+                            </ul>
+                            <p>Deployed with Docker Compose on Ubuntu Server.</p>
+                        </div>
+                        <div class="links">
+                            <a href="https://github.com/DerekWhiteM/TradingApp" target="_blank" class="left">Code</a>
+                            <a href="https://trading-app.derekwhite.dev" target="_blank">Live Demo</a>
+                        </div>
+                    </div>
+                    <img src="trading-app.png">
+                </div>
+            </div>
+        </div>
+
+    </section>
+    <!-- Contact -->
+    <section id="contact" class="contact">
+        <h2>Contact Me</h2>
+        <div class="contact-form-container">
+            <div class="contact-form">
+                <form action="https://formspree.io/f/xpzblzll" method="POST">
+                    <!-- Name -->
+                    <div class="form-control">
+                        <label for="name">Name</label>
+                        <input type="text" id="name" name="sender-name" placeholder="Enter Your Name"
+                            class="input-field" required />
+                    </div>
+                    <!-- Email -->
+                    <div class="form-control">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" name="sender-email" placeholder="Enter Your Email"
+                            class="input-field" required />
+                    </div>
+                    <!-- Message -->
+                    <div class="form-control">
+                        <label for="message">Message</label>
+                        <textarea id="message" cols="60" rows="10" placeholder="Enter Your Message" name="message"
+                            class="input-field" required></textarea>
+                    </div>
+                    <!-- Submit -->
+                    <input type="submit" value="Submit" id="submit-btn" class="submit-btn" />
+                </form>
+            </div>
+        </div>
+    </section>
+    <script src="./app.js"></script>
+</body>
+
+</html>
