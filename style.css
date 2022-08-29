@@ -5,7 +5,7 @@
 	--bg-color: #13261C;
 	--primary-color: #FFFFFF;
 	--secondary-color: #44B78B;
-	--section-margin: 25%;
+	--section-margin: 10rem;
 	--bold-font: 700;
 	--container-width: 61.8rem;
 }
@@ -397,8 +397,6 @@ nav ul {
 
 .contact-form-container {
 	max-width: 40.75rem;
-	margin: 0 auto;
-	padding: 0.938rem;
 	border-radius: 5px;
 	box-shadow: 0 3px 10px var(--secondary-shadow);
 }
@@ -418,11 +416,14 @@ nav ul {
 	width: 100%;
 	padding-top: 10px;
 	padding-bottom: 10px;
+	padding-left: 0;
+	padding-right: 0;
 	border-radius: 5px;
 	border: none;
 	border: 2px outset var(--primary-color);
 	font-size: 0.875rem;
 	outline: none;
+	box-sizing: border-box;
 }
 
 .input-field::placeholder {
