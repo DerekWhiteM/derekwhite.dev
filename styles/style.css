@@ -1,85 +1,36 @@
-/* --- Variables --- */
-
 :root {
 	--font-family: Arial;
-	--bg-color: #13261C;
-	--primary-color: #FFFFFF;
+	--bg-color: #FFFFFF;
+	--primary-color: #141c3a;
 	--secondary-color: #44B78B;
 	--section-margin: 10rem;
 	--bold-font: 700;
 	--container-width: 61.8rem;
 }
 
-/* --- End - Variables --- */
-
-
-
-/* --- CSS Reset --- */
-
-/*
-    http://meyerweb.com/eric/tools/css/reset/ 
-    v2.0 | 20110126
-    License: none (public domain)
-*/
-
-html, body, div, span, applet, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-a, abbr, acronym, address, big, cite, code,
-del, dfn, em, img, ins, kbd, q, s, samp,
-small, strike, strong, sub, sup, tt, var,
-b, u, i, center,
-dl, dt, dd, ol, ul, li,
-fieldset, form, label, legend,
-table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed,
-figure, figcaption, footer, header, hgroup,
-menu, nav, output, ruby, section, summary,
-time, mark, audio, video {
-	margin: 0;
-	padding: 0;
-	border: 0;
-	font-size: 100%;
-	font: inherit;
-	vertical-align: baseline;
+html {
+	font-size: 16px;
 }
 
-article, aside, details, figcaption, figure,
-footer, header, hgroup, menu, nav, section {
-	display: block;
+h2 {
+	font-size: 2.2rem;
 }
 
-body {
-	line-height: 1;
+p {
+	font-size: 1.2rem;
 }
 
-ol, ul {
-	list-style: none;
+.container {
+	max-width: 900px;
+	margin: auto;
 }
-
-blockquote, q {
-	quotes: none;
-}
-
-blockquote:before, blockquote:after,
-q:before, q:after {
-	content: '';
-	content: none;
-}
-
-table {
-	border-collapse: collapse;
-	border-spacing: 0;
-}
-
-/* --- End - CSS Reset --- */
-
-
 
 /* --- App --- */
 
 html {
 	scroll-behavior: smooth;
 	background-color: var(--bg-color);
+	
 }
 
 body {
@@ -92,59 +43,32 @@ body {
 
 /* --- Navbar --- */
 
-nav {
+.nav {
+	box-sizing: border-box;
 	display: flex;
+	gap: 1rem;
 	align-items: center;
-	justify-content: space-between;
+	justify-content: center;
 	width: 100%;
-	margin: auto;
-	padding-top: 1.5rem;
-	padding-bottom: 1.5rem;
-	position: absolute;
-	right: 0;
+	padding: 1.5rem;
+	border-bottom: 1px solid lightgray;
+	position: fixed;
+	background-color: var(--bg-color);
 }
 
-nav div {
-	width: 100%;
-	max-width: 61.8rem;
-	margin: auto;
-	padding-left: 5vw;
-	padding-right: 5vw;
-}
-
-nav h1 {
-	color: var(--primary-color);
-	font-size: 1.5rem;
-	text-transform: uppercase;
-}
-
-nav a {
-	color: var(--primary-color);
-	border-style: solid;
-	border-color: var(--primary-color);
-	border-width: 1px;
-	border-radius: 4px;
-	padding: .5rem;
+.nav__item {
 	text-decoration: none;
+	color: var(--primary-color);
+	padding-bottom: 5px;
 }
 
-nav a:hover {
+.nav__item.active {
+	border-bottom: 2px solid var(--secondary-color);
+}
+
+.nav a:hover {
 	border-color: var(--secondary-color);
 	color: var(--secondary-color);
-}
-
-nav ul {
-	margin-left: auto;
-	width: fit-content;
-}
-
-.menu-button {
-	color: var(--primary-color);
-	font-size: 2rem;
-	border: 0;
-	background-color: transparent;
-	cursor: pointer;
-	display: none;
 }
 
 /* --- End - Navbar --- */
@@ -154,69 +78,67 @@ nav ul {
 /* --- Hero --- */
 
 .hero {
-	max-width: 61.8rem;
-	padding-left: 5vw;
-	padding-right: 5vw;
 	margin: auto;
 	display: flex;
 	height: 100vh;
-	align-items: center;
+	text-align: center;
 }
 
-.hero h1 {
+.hero__title {
 	color: var(--primary-color);
-	font-size: 2rem;
+	font-size: 2.75rem;
+	font-weight: bold;
 	margin-bottom: .7rem;
 	line-height: 125%;
 }
 
-.hero ul {
+.hero__subtitle {
+	margin-bottom: 1.1rem;
+}
+
+.hero__links {
 	display: flex;
+	justify-content: center;
 	gap: 1rem;
 }
 
-.hero li {
-	margin-top: .7rem;
-	margin-bottom: .7rem;
-}
-
-.hero a {
-	color: var(--primary-color);
-	text-decoration: none;
-	padding: .5rem;
-	border-style: solid;
-	border-width: 1px;
-	border-radius: 4px;
-}
-
-.hero a:hover {
+.hero__link {
+	display: inline-block;
+	border: 1px solid var(--secondary-color);
 	color: var(--secondary-color);
+	text-decoration: none;
+	border-radius: 4px;
+	padding: .5rem;
 }
 
-.hero .hello {
-	display: block;
-	margin-bottom: 1rem;
-}
-
-.hero .my-name {
-	display: block;
-}
-
-.hero .my-name-1 {
-	display: block;
-	margin-bottom: 1rem;
-}
-
-.hero .subtitle {
-	display: block;
-	margin-bottom: 1.4rem;
-	color: var(--primary-color);
-	opacity: .75;
-	max-width: 25rem;
+.hero__link:hover {
+	background-color: var(--secondary-color);
+	color: white;
 }
 
 /* --- End - Hero --- */
 
+
+/* --- About --- */
+
+.about {
+	text-align: center;
+	padding-top: 5rem;
+	padding-bottom: 5rem;
+	background-color: rgb(33, 201, 152);
+	color: white;
+}
+
+.about__title {
+	margin-bottom: 1rem;
+}
+
+.about__content {
+	font-size: 1.4rem;
+	line-height: 1.5;
+}
+
+/* --- End - About --- */
 
 
 /* --- Skills --- */

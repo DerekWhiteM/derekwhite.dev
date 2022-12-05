@@ -4,43 +4,46 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="styles/reset.css" />
+    <link rel="stylesheet" href="styles/style.css" />
+    <script src="./app.js" defer></script>
     <title>Derek White | Web Developer</title>
 </head>
 
 <body>
 
     <!-- Navbar -->
-    <nav>
-        <div>
-            <ul>
-                <li class="resume"><a href="Derek White.pdf" target="_blank">Resume</a></li>
-            </ul>
-            <button class="menu-button">
-                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <g id="24 / basic / menu">
-                        <path id="icon" fill-rule="evenodd" clip-rule="evenodd"
-                            d="M22 7V5H2V7H22ZM22 11V13H2V11H22ZM22 17V19H2V17H22Z" fill="black" />
-                    </g>
-                </svg>
-            </button>
-        </div>
+    <nav class="nav">
+        <a class="nav__item" href="#home">Home</a>
+        <a class="nav__item" href="#about">About</a>
+        <a class="nav__item" href="#skills">Skills</a>
+        <a class="nav__item" href="#projects">Projects</a>
+        <a class="nav__item" href="#contact">Contact</a>
     </nav>
 
-    <!-- Hero -->
-    <section id="about" class="hero">
-        <div>
-            <h1>
-                <span class="hello">Hello!</span>
-                <span class="my-name">My name is Derek White.</span>
-                <span class="my-name-1">I'm a full-stack web developer.</span>
-            </h1>
-            <p class="subtitle">
-                I'm a software developer dedicated to building intuitive and purposeful digital solutions.
+    <!-- Home -->
+    <section id="home" class="hero">
+        <div class="container">
+            <h1 class="hero__title">Full Stack Web Developer</h1>
+            <p class="hero__subtitle">I create simple solutions for complex problems.</p>
+            <div class="hero__links">
+                <a class="hero__link" href="https://github.com/DerekWhiteM" target="_blank">GitHub</a>
+                <a class="hero__link" href="Derek White.pdf" target="_blank">Resume</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- About -->
+    <section id="about" class="about">
+        <div class="container">
+            <h2 class="about__title">About Me</h2>
+            <p class="about__content">
+                I'm a self-taught developer based in Charlotte, North Carolina. 
+                I started learning web development after completing my finance degree in 2019, 
+                and I was soon promoted from my position packing orders to being the sole developer at RnA ReSet, 
+                an online seller of dietary supplements. I am now looking to advance my career by joining a team of 
+                experienced developers. 
             </p>
-            <ul>
-                <li><a href="#projects">Check out my latest app</a></li>
-            </ul>
         </div>
     </section>
 
@@ -126,7 +129,6 @@
         </div>
     </section>
     
-    <script src="./app.js"></script>
 </body>
 
 </html>
