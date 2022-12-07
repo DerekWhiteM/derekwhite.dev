@@ -14,11 +14,11 @@
 
     <!-- Navbar -->
     <nav class="nav">
-        <a class="nav__item" href="#home">Home</a>
-        <a class="nav__item" href="#about">About</a>
-        <a class="nav__item" href="#skills">Skills</a>
-        <a class="nav__item" href="#projects">Projects</a>
-        <a class="nav__item" href="#contact">Contact</a>
+        <a class="nav__item" data-section_id="home">Home</a>
+        <a class="nav__item" data-section_id="about">About</a>
+        <a class="nav__item" data-section_id="skills">Skills</a>
+        <a class="nav__item" data-section_id="projects">Projects</a>
+        <a class="nav__item" data-section_id="contact">Contact</a>
     </nav>
 
     <!-- Home -->
@@ -49,50 +49,56 @@
 
     <!-- Skills -->
     <section id="skills" class="skills container">
-        <h2 class="skills-header">My Skills</h2>
-        <div class="skills-wrapper">
-            <div class="set">
-                <img class="icon icon-card" src="icons/icons8-html-5.svg" alt="HTML5 logo" title="HTML5">
-                <img class="icon icon-card" src="icons/icons8-javascript.svg" alt="JavaScript logo" title="JavaScript">
-                <img class="icon icon-card" src="icons/icons8-react.svg" alt="React.js logo" title="React.js">
-                <img class="icon icon-card" src="icons/icons8-node-js.svg" alt="Node.js logo" title="Node.js">
+        <div class="skills__cards">
+            <div class="skills__card">
+                <img src="icons/code.svg" class="skills__card__icon">
+                <h3 class="skills__card__title">Front-End</h3>
+                <ul class="skills__card__list">
+                    <li>HTML</li>
+                    <li>CSS</li>
+                    <li>JavaScript</li>
+                    <li>React</li>
+                    <li>Remix</li>
+                </ul>
             </div>
-            <div class="set">
-                <img class="icon icon-card" src="icons/icons8-css3.svg" alt="CSS3 logo" title="CSS3">
-                <img class="icon icon-card" src="icons/icons8-mongodb.svg" alt="MongoDB logo" title="MongoDB">
-                <img class="icon icon-card" src="icons/icons8-postgresql.svg" alt="PostgreSQL logo" title="PostgreSQL">
-                <img class="icon icon-card" src="icons/icons8-git.svg" alt="Git logo" title="Git">
+            <div class="skills__card">
+                <img src="icons/database.svg" class="skills__card__icon">
+                <h3 class="skills__card__title">Back-End</h3>
+                <ul class="skills__card__list">
+                    <li>Node</li>
+                    <li>Express</li>
+                    <li>Postgres</li>
+                    <li>Sequelize</li>
+                    <li>Passport.js</li>
+                </ul>
+            </div>
+            <div class="skills__card">
+                <img src="icons/terminal.svg" class="skills__card__icon">
+                <h3 class="skills__card__title">Other</h3>
+                <ul class="skills__card__list">
+                    <li>Git</li>
+                    <li>Linux</li>
+                    <li>Nginx</li>
+                    <li>Docker</li>
+                </ul>
             </div>
         </div>
     </section>
 
     <!-- Projects -->
-    <section id="projects" class="projects">
-            <div class="projects-container">
-                <!-- Trading App -->
-                <h2 class="projects-title">Featured Project</h2>
-                <div class="project-card">
-                    <div class="project-details">
-                        <div>
-                            <h3>Stock Trading Simulator</h3>
-                            <p>A single-page application where users can buy and sell stocks with simulated funds.</p>
-                            <p>Build a portfolio from the 500 largest stocks in the world by market cap. Prices update daily at 8pm EST.</p>
-                            <h4 class="tech-stack">Tech stack</h4>
-                            <ul>
-                                <li>Front-end: React.js</li>
-                                <li>Back-end: Express.js</li>
-                                <li>Database: MongoDB</li>
-                            </ul>
-                            <p>Deployed with Docker Compose on Ubuntu Server.</p>
-                        </div>
-                        <div class="links">
-                            <a href="https://github.com/DerekWhiteM/TradingApp" target="_blank" class="left">Code</a>
-                            <a href="https://trading-app.derekwhite.dev" target="_blank">Live Demo</a>
-                        </div>
-                    </div>
-                    <img src="trading-app.png">
+    <section id="projects" class="projects container">
+        <h2 class="projects__title">My Recent Work</h2>
+        <div class="projects__list">
+            <div class="project">
+                <img src="images/inventory-manager.png" class="project__image" />
+                <h3 class="project__title">Inventory Manager</h3>
+                <p class="project__description">A Remix/Express application for managing inventory.</p>
+                <div class="project__links">
+                    <a href="#" class="project__link">Demo</a>
+                    <a href="#" class="project__link">Code</a>
                 </div>
             </div>
+        </div>
     </section>
 
     <!-- Contact -->
