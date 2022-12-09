@@ -189,12 +189,15 @@ body {
 .projects__title {
 	text-align: center;
 	font-size: 2rem;
-	margin-bottom: 2rem;
+	margin-top: 10rem;
+	margin-bottom: 5rem;
 }
 
 .projects__list {
 	display: flex;
+	flex-wrap: wrap;
 	justify-content: center;
+	gap: 6rem;
 }
 
 .project {
@@ -213,6 +216,8 @@ body {
 
 .project__description {
 	padding: 1rem;
+	line-height: 1.5;
+	margin-bottom: .25rem;
 }
 
 .project__image {
@@ -247,7 +252,7 @@ body {
 /* --- Contact --- */
 
 .contact {
-	padding-top: 5rem;
+	padding-top: 10rem;
 	padding-bottom: 5rem;
 }
 
@@ -255,7 +260,7 @@ body {
 	text-align: center;
 	font-size: 2rem;
 	color: var(--primary-color);
-	margin-bottom: var(--bottom-margin-2);
+	margin-bottom: 2rem;
 }
 
 .contact-form-container {
@@ -312,3 +317,12 @@ body {
 }
 
 /* --- End - Contact --- */
+
+/* --- Footer --- */
+
+footer {
+	height: 72px;
+	background-color: var(--secondary-color);
+}
+
+/* --- End - Footer --- */
