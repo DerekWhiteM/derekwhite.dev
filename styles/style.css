@@ -171,6 +171,7 @@ body {
 	flex-direction: column;
 	gap: .618rem;
 	font-size: 1.2rem;
+	color: rgb(60, 60, 60);
 }
 
 .skills__card__icon {
