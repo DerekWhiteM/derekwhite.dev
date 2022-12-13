@@ -268,8 +268,9 @@ body {
 .contact {
 	padding-top: 10rem;
 	padding-bottom: 5rem;
-	margin-left: 2rem;
-	margin-right: 2rem;
+	padding-left: 2rem;
+	padding-right: 2rem;
+	margin: auto;
 }
 
 .contact h2 {
