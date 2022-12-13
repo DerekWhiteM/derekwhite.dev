@@ -27,3 +27,17 @@ navLinks.forEach(navLink => {
         scrollToSection(navLink.dataset.section_id)
     });
 });
+
+// Check if the device supports touch
+if ('ontouchstart' in window) {
+    // If so, add the "no-hover" class to the element
+    navLinks.forEach(navLink => {
+        navLink.classList.add('no-hover');
+    })
+  } else {
+    // If not, remove the "no-hover" class from the element
+    navLinks.forEach(navLink => {
+        navLink.classList.add('no-hover');
+    })
+  }
+  
