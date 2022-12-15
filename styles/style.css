@@ -270,10 +270,10 @@ body {
 /* --- Contact --- */
 
 .contact {
+	max-width: 900px;
 	padding-bottom: 5rem;
 	padding-left: 2rem;
 	padding-right: 2rem;
-	max-width: 900px;
 	margin: auto;
 }
 
