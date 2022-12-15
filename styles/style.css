@@ -55,7 +55,7 @@ body {
 	margin-bottom: 1.5rem;
 }
 
-.nav__item:not(.no-hover):hover {
+.nav__item.no-touch:hover {
 	color: var(--secondary-color);
 	cursor: pointer;
 }
@@ -200,6 +200,10 @@ body {
 
 /* --- Projects --- */
 
+.projects {
+	padding-bottom: 10rem;
+}
+
 .projects__title {
 	text-align: center;
 	font-size: 2rem;
@@ -266,10 +270,10 @@ body {
 /* --- Contact --- */
 
 .contact {
-	padding-top: 10rem;
 	padding-bottom: 5rem;
 	padding-left: 2rem;
 	padding-right: 2rem;
+	max-width: 900px;
 	margin: auto;
 }
 

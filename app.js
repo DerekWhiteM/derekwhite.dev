@@ -28,16 +28,13 @@ navLinks.forEach(navLink => {
     });
 });
 
-// Check if the device supports touch
-if ('ontouchstart' in window) {
-    // If so, add the "no-hover" class to the element
+// If a non-touchscreen device, apply hover effects
+if (!('ontouchstart' in window)) {
     navLinks.forEach(navLink => {
-        navLink.classList.add('no-hover');
-    })
-  } else {
-    // If not, remove the "no-hover" class from the element
+        navLink.classList.add('no-touch');
+    });
+} else {
     navLinks.forEach(navLink => {
-        navLink.classList.add('no-hover');
-    })
-  }
-  
+        navLink.classList.remove('no-touch');
+    });
+}
