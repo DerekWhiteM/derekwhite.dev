@@ -25,7 +25,7 @@
     <section id="home" class="hero">
         <div class="container">
             <h1 class="hero__title">Full Stack Web Developer</h1>
-            <p class="hero__subtitle">Simplicity is the ultimate sophistication</p>
+            <p class="hero__subtitle">Simplicity is the ultimate sophistication.</p>
             <div class="hero__links">
                 <a class="hero__link" href="https://github.com/DerekWhiteM" target="_blank">GitHub</a>
                 <a class="hero__link" href="resume.pdf" target="_blank">Resume</a>
@@ -64,11 +64,11 @@
                 <img src="icons/database.svg" class="skills__card__icon">
                 <h3 class="skills__card__title">Back-End</h3>
                 <ul class="skills__card__list">
-                    <li>Node</li>
+                    <li>Node.js</li>
                     <li>Express</li>
                     <li>Postgres</li>
-                    <li>Sequelize</li>
-                    <li>Passport.js</li>
+                    <li>Prisma</li>
+                    <li>Passport</li>
                 </ul>
             </div>
             <div class="skills__card">
@@ -94,6 +94,15 @@
                 <p class="project__description">A Remix and Express application for managing inventory. Integrates with Shopify and ShipStation.</p>
             </div>
             <div class="project">
+                <img src="images/battleship.png" class="project__image" />
+                <h3 class="project__title">Battleship</h3>
+                <p class="project__description">Play against the computer. Built with React and TypeScript.</p>
+                <div class="project__links">
+                    <a href="https://derekwhitem.github.io/battleship/" target="_blank" class="project__link">Demo</a>
+                    <a href="https://github.com/DerekWhiteM/battleship" target="_blank" class="project__link">Code</a>
+                </div>
+            </div>
+            <div class="project">
                 <img src="images/todo-list.png" class="project__image" />
                 <h3 class="project__title">ToDo List</h3>
                 <p class="project__description">A to-do list app made with vanilla JavaScript bundled with Webpack.</p>
@@ -111,15 +120,6 @@
                     <a href="https://github.com/DerekWhiteM/odin-admin-dashboard" target="_blank" class="project__link">Code</a>
                 </div>
             </div>
-            <div class="project">
-                <img src="images/tic-tac-toe.png" class="project__image" />
-                <h3 class="project__title">Tic-Tac-Toe</h3>
-                <p class="project__description">JavaScript Tic-Tac-Toe</p>
-                <div class="project__links">
-                    <a href="https://derekwhitem.github.io/odin-tic-tac-toe/" target="_blank" class="project__link">Demo</a>
-                    <a href="https://github.com/DerekWhiteM/odin-tic-tac-toe" target="_blank" class="project__link">Code</a>
-                </div>
-            </div>
         </div>
     </section>
 
@@ -129,25 +129,21 @@
         <div class="contact-form-container">
             <div class="contact-form">
                 <form action="https://formspree.io/f/xpzblzll" method="POST">
-                    <!-- Name -->
                     <div class="form-control">
                         <label for="name">Name</label>
                         <input type="text" id="name" name="sender-name"
                             class="input-field" required />
                     </div>
-                    <!-- Email -->
                     <div class="form-control">
                         <label for="email">Email Address</label>
                         <input type="email" id="email" name="sender-email"
                             class="input-field" required />
                     </div>
-                    <!-- Message -->
                     <div class="form-control">
                         <label for="message">Message</label>
                         <textarea id="message" cols="60" rows="10" name="message"
                             class="input-field" required></textarea>
                     </div>
-                    <!-- Submit -->
                     <input type="submit" value="Submit" id="submit-btn" class="submit-btn" />
                 </form>
             </div>
