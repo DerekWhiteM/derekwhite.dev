@@ -1,155 +1,93 @@
 <!DOCTYPE html>
 <html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="styles/reset.css" />
+        <link rel="stylesheet" href="styles/style.css" />
+        <script src="./app.js" defer></script>
+        <title>derekwhite.dev</title>
+    </head>
 
-<head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="styles/reset.css" />
-    <link rel="stylesheet" href="styles/style.css" />
-    <script src="./app.js" defer></script>
-    <title>Derek White | Web Developer</title>
-</head>
+    <body>
+        <!-- Navbar -->
+        <nav class="nav">
+            <div>derekwhite.dev</div>
+        </nav>
 
-<body>
-
-    <!-- Navbar -->
-    <nav class="nav">
-        <a class="nav__item" data-section_id="home">Home</a>
-        <a class="nav__item" data-section_id="about">About</a>
-        <a class="nav__item" data-section_id="skills">Skills</a>
-        <a class="nav__item" data-section_id="projects">Projects</a>
-        <a class="nav__item" data-section_id="contact">Contact</a>
-    </nav>
-
-    <!-- Home -->
-    <section id="home" class="hero">
-        <div class="container">
-            <h1 class="hero__title">Full Stack Web Developer</h1>
-            <p class="hero__subtitle">Simplicity is the ultimate sophistication.</p>
-            <div class="hero__links">
-                <a class="hero__link" href="https://github.com/DerekWhiteM" target="_blank">GitHub</a>
-                <a class="hero__link" href="DerekWhite_Resume.pdf" target="_blank">Resume</a>
-            </div>
-        </div>
-    </section>
-
-    <!-- About -->
-    <section id="about" class="about">
-        <div class="container">
-            <h2 class="about__title">About Me</h2>
-            <p class="about__content">
-                As a self-taught developer, I have developed a strong foundation in web development through hands-on experience and independent study. 
-                I began my journey in the field after completing my finance degree in 2019 and quickly demonstrated my aptitude for coding. 
-                This led to my promotion from a warehouse position to the sole developer at RnA ReSet, 
-                an online seller of dietary supplements. I am now seeking to further advance my career by joining a talented team of experienced developers. 
-            </p>
-        </div>
-    </section>
-
-    <!-- Skills -->
-    <section id="skills" class="skills container">
-        <div class="skills__cards">
-            <div class="skills__card">
-                <img src="icons/code.svg" class="skills__card__icon">
-                <h3 class="skills__card__title">Front-End</h3>
-                <ul class="skills__card__list">
-                    <li>HTML</li>
-                    <li>CSS</li>
-                    <li>JavaScript</li>
-                    <li>React</li>
-                    <li>Remix</li>
-                </ul>
-            </div>
-            <div class="skills__card">
-                <img src="icons/database.svg" class="skills__card__icon">
-                <h3 class="skills__card__title">Back-End</h3>
-                <ul class="skills__card__list">
-                    <li>Node.js</li>
-                    <li>Express</li>
-                    <li>Postgres</li>
-                    <li>Prisma</li>
-                    <li>Passport</li>
-                </ul>
-            </div>
-            <div class="skills__card">
-                <img src="icons/terminal.svg" class="skills__card__icon">
-                <h3 class="skills__card__title">Other</h3>
-                <ul class="skills__card__list">
-                    <li>Git</li>
-                    <li>Linux</li>
-                    <li>Nginx</li>
-                    <li>Docker</li>
-                </ul>
-            </div>
-        </div>
-    </section>
-
-    <!-- Projects -->
-    <section id="projects" class="projects container">
-        <h2 class="projects__title">My Recent Work</h2>
-        <div class="projects__list">
-            <div class="project">
-                <img src="images/inventory-manager.png" class="project__image" />
-                <h3 class="project__title">Inventory Manager</h3>
-                <p class="project__description">A Remix and Express application for managing inventory. Integrates with Shopify and ShipStation.</p>
-            </div>
-            <div class="project">
-                <img src="images/battleship.png" class="project__image" />
-                <h3 class="project__title">Battleship</h3>
-                <p class="project__description">Play against the computer. Built with React and TypeScript.</p>
-                <div class="project__links">
-                    <a href="https://derekwhitem.github.io/battleship/" target="_blank" class="project__link">Demo</a>
-                    <a href="https://github.com/DerekWhiteM/battleship" target="_blank" class="project__link">Code</a>
+        <!-- Projects -->
+        <section id="projects" class="projects container">
+            <div class="projects__list">
+                <div class="project">
+                    <img src="images/inventory-manager.png" class="project__image" />
+                    <h3 class="project__title">Inventory Manager</h3>
+                    <p class="project__description">
+                        A Remix application for managing inventory. Integrates with Shopify and
+                        ShipStation.
+                    </p>
+                </div>
+                <div class="project">
+                    <img src="images/battleship.png" class="project__image" />
+                    <h3 class="project__title">Battleship</h3>
+                    <p class="project__description">
+                        Play against the computer. Built with React and TypeScript.
+                    </p>
+                    <div class="project__links">
+                        <a
+                            href="https://derekwhitem.github.io/battleship/"
+                            target="_blank"
+                            class="project__link"
+                            >Demo</a
+                        >
+                        <a
+                            href="https://github.com/DerekWhiteM/battleship"
+                            target="_blank"
+                            class="project__link"
+                            >Code</a
+                        >
+                    </div>
+                </div>
+                <div class="project">
+                    <img src="images/todo-list.png" class="project__image" />
+                    <h3 class="project__title">ToDo List</h3>
+                    <p class="project__description">
+                        A to-do list app made with vanilla JavaScript bundled with Webpack.
+                    </p>
+                    <div class="project__links">
+                        <a
+                            href="https://derekwhitem.github.io/odin-todo/"
+                            target="_blank"
+                            class="project__link"
+                            >Demo</a
+                        >
+                        <a
+                            href="https://github.com/DerekWhiteM/odin-todo"
+                            target="_blank"
+                            class="project__link"
+                            >Code</a
+                        >
+                    </div>
+                </div>
+                <div class="project">
+                    <img src="images/admin-dashboard.png" class="project__image" />
+                    <h3 class="project__title">Admin Dashboard</h3>
+                    <p class="project__description">A dashboard layout. HTML & CSS</p>
+                    <div class="project__links">
+                        <a
+                            href="https://derekwhitem.github.io/odin-admin-dashboard/"
+                            target="_blank"
+                            class="project__link"
+                            >Demo</a
+                        >
+                        <a
+                            href="https://github.com/DerekWhiteM/odin-admin-dashboard"
+                            target="_blank"
+                            class="project__link"
+                            >Code</a
+                        >
+                    </div>
                 </div>
             </div>
-            <div class="project">
-                <img src="images/todo-list.png" class="project__image" />
-                <h3 class="project__title">ToDo List</h3>
-                <p class="project__description">A to-do list app made with vanilla JavaScript bundled with Webpack.</p>
-                <div class="project__links">
-                    <a href="https://derekwhitem.github.io/odin-todo/" target="_blank" class="project__link">Demo</a>
-                    <a href="https://github.com/DerekWhiteM/odin-todo" target="_blank" class="project__link">Code</a>
-                </div>
-            </div>
-            <div class="project">
-                <img src="images/admin-dashboard.png" class="project__image" />
-                <h3 class="project__title">Admin Dashboard</h3>
-                <p class="project__description">A dashboard layout. HTML & CSS</p>
-                <div class="project__links">
-                    <a href="https://derekwhitem.github.io/odin-admin-dashboard/" target="_blank" class="project__link">Demo</a>
-                    <a href="https://github.com/DerekWhiteM/odin-admin-dashboard" target="_blank" class="project__link">Code</a>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Contact -->
-    <section id="contact" class="contact">
-        <h2>Contact Me</h2>
-        <div class="contact-form-container">
-            <div class="contact-form">
-                <form action="https://formspree.io/f/xpzblzll" method="POST">
-                    <div class="form-control">
-                        <label for="name">Name</label>
-                        <input type="text" id="name" name="sender-name"
-                            class="input-field" required />
-                    </div>
-                    <div class="form-control">
-                        <label for="email">Email Address</label>
-                        <input type="email" id="email" name="sender-email"
-                            class="input-field" required />
-                    </div>
-                    <div class="form-control">
-                        <label for="message">Message</label>
-                        <textarea id="message" cols="60" rows="10" name="message"
-                            class="input-field" required></textarea>
-                    </div>
-                    <input type="submit" value="Submit" id="submit-btn" class="submit-btn" />
-                </form>
-            </div>
-        </div>
-    </section>
-    
-</body>
-
+        </section>
+    </body>
 </html>
