@@ -27,3 +27,14 @@ navLinks.forEach(navLink => {
         scrollToSection(navLink.dataset.section_id)
     });
 });
+
+// If a non-touchscreen device, apply hover effects
+if (!('ontouchstart' in window)) {
+    navLinks.forEach(navLink => {
+        navLink.classList.add('no-touch');
+    });
+} else {
+    navLinks.forEach(navLink => {
+        navLink.classList.remove('no-touch');
+    });
+}
